@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = process.env.REACT_APP_API_URL;
+const url = 'https://covid19.mathdro.id/api';
 
 export const fetchData = async (country) => {
     let changeableUrl = url;
@@ -25,7 +25,7 @@ export const fetchDailyData = async () => {
         const { data }  = await axios.get(`${url}/daily`);
         
         console.log(data);
-        
+
         const modifiedData = data.map((dailyData) => ({
             confirmed: dailyData.confirmed.total,
             deaths: dailyData.deaths.total,
