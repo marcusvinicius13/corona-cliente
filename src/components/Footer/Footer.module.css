@@ -1,0 +1,24 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+  
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer span {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+
+
+.footer span .icon_favorite {
+    color: #f898a2;
+    width: 17px;
+    margin-bottom: -7px;
+}
+
+.footer span .red{
+    color: #f898a2;
+}
